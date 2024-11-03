@@ -26,7 +26,7 @@ const EventDetails = async ({ params: { id } }: SearchParamProps) => {
               <div className='flex gap-3'>
                 <p className='p-bold-20 rounded-full bg-green-500/10 px-5 py-2 text-green-700'>{event.isFree ? "FREE" : `${event.price}`}</p>
 
-                <p className='p-medium-16 rounded-full bg-gray-500/10 px-4 py-2.5 text-gray-500'>{event.category.name}</p>
+                <p className='p-medium-16 rounded-full bg-grey-500/10 px-4 py-2.5 text-grey-500'>{event.category.name}</p>
               </div>
 
               <p className='p-medium-18 ml-2 mt-2 sm:mt-0'>
@@ -55,7 +55,7 @@ const EventDetails = async ({ params: { id } }: SearchParamProps) => {
           </div>
 
           <div className='flex flex-col gap-2'>
-            <p className="p-bold-20 text-gray-600">What You'll Learn</p>
+            <p className="p-bold-20 text-grey-600">What You'll Learn</p>
             <p className='p-medium-16 p-regular-18'>{event.description}</p>
             <p className='p-medium-16 p-regular-18 truncate text-primary-500 underline'>{event.url}</p>
           </div>
