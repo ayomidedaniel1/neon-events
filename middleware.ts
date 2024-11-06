@@ -11,9 +11,9 @@ const isPublicRoute = createRouteMatcher([
   '/api/uploadthing'
 ]);
 
-export default clerkMiddleware(async (auth, request) => {
+export default clerkMiddleware((auth, request) => {
   if (!isPublicRoute(request)) {
-    return auth().redirectToSignIn();
+    auth().protect();
   }
 });
 
